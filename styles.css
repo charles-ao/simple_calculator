@@ -1,0 +1,105 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    margin: 0;
+    background-color: #F5F5F5;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 5px;
+    background-color: inherit;
+    color: #707070;
+    text-align: center;
+    font-size: small;
+}
+
+
+header {
+    padding: 2px;
+    background-color:  #707070;
+    color: white;
+    margin-bottom: 5px;
+    text-align: center;
+    text-shadow: 5px 5px #505050;
+}
+
+#result {
+    float: right;
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.display {
+    padding: 10px 5%;
+    color: #505050;
+    height: 100px;
+    width: 40%;
+    margin: 20px auto;
+    background-color: white;
+    border-radius:  10px ;
+    box-shadow: 1px 1px 3px #707070;
+}
+
+.key {
+    border-radius: 0 0 20px  0 ;
+    padding: 5px;
+    text-align: center;
+    font-weight: bolder;
+    width: 30px;
+    height: 30px;
+    box-shadow: 1px 1px 5px #707070;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px 15%;
+    margin: 20px auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-content: space-evenly;
+}
+  
+.set0{
+    background-color: #707070;
+    border: 1px solid #707070;
+    color: #FBFBFB;
+    transition: all 1s;
+}
+
+.set1{
+    background-color: white;
+    border: 1px solid white;
+    color: #707070;
+    transition: all 1s;
+}
+
+.set2{
+    background-color: #E4E4E4;
+    border: 1px solid #E4E4E4;
+    color: #707070;
+    transition: all .5s;
+}
+
+.set0:hover, .set1:hover, .set2:hover,
+.set0:active, .set1:active, .set2:active{
+    background-color: #505050;
+    border: 1px solid #505050;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .display {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .display {
+        width: 80%;
+    }
+}
