@@ -48,14 +48,14 @@ for (let index = 0; index < symbol.length; index++) {
             if (symbol[index].id === '=') {
                 value= value.toString()
                 value = value.substring(0,value.length-1);
-
+                showValue(value);
  
                 try {
                     showResult(eval(value))
-                } catch (e) {
-                    if (e instanceof SyntaxError) {
+                } catch (err) {
+                    if (err instanceof SyntaxError) {
 
-                        console.log(e.message);
+                        console.log(err.message);
                         showResult('syntax error!')
 
                     }
