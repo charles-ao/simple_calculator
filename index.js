@@ -49,13 +49,6 @@ for (let index = 0; index < symbol.length; index++) {
                 value= value.toString()
                 value = value.substring(0,value.length-1);
 
-                // let answer = eval(value);
-                // if (answer == null) {
-                //     console.log('error');
-                // } else {
-                //     showResult(answer);
-
-                // }
  
                 try {
                     showResult(eval(value))
